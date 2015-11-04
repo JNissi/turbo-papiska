@@ -1,0 +1,5 @@
+<h2>Tracks</h2>
+
+<div ng-repeat="track in tracks" ng-click="play(track)">
+	{{track.artist}} - {{track.title}} [{{track.duration | time}}]
+</div>
