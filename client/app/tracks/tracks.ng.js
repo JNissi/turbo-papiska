@@ -19,5 +19,9 @@ angular
 		$scope.play = function(track) {
 			$meteor.call('playTrack', track);
 		};
+
+		$scope.queue = function(track) {
+			$meteor.call('queueTrack', track);
+		}
 	})
 ;

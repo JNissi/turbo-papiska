@@ -58,3 +58,11 @@ files.forEach(function(file) {
 		});
 	}));
 });
+
+Status.upsert(
+	{},
+	{
+		playing: false,
+		position: 0
+	}
+);

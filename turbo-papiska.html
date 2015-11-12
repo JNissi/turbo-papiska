@@ -4,5 +4,8 @@
 </head>
 
 <body ng-app="turbo-papiska">
-	<div ui-view></div>
+	<div layout="column" layout-fill>
+		<div ui-view flex style="overflow-x: auto"></div>
+		<div ng-include="'client/bottom_toolbar.ng.html'"></div>
+	</div>
 </body>

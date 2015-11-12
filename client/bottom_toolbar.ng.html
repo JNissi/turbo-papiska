@@ -1,0 +1,17 @@
+<md-toolbar style="overflow-x: hidden" layout="column" ng-controller="StatusController">
+	<md-slider aria-label="Position scrubber"></md-slider>
+	<div layout="row">
+		<md-button class="md-icon-button" ng-click="playToggle()" aria-label="Toggle play">
+			<md-icon ng-if="status.playing == false">play_arrow</md-icon>
+			<md-icon ng-if="status.playing == true">pause</md-icon>
+		</md-button>
+		<div layout="column" layout-align="center start">
+			<div class="md-body-1">
+				{{status.track.title}}
+			</div>
+			<div class="md-caption">
+				{{status.track.artist}} - {{status.track.album}}
+			</div>
+		</div>
+	</div>
+</md-toolbar>

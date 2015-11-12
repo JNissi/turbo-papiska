@@ -1,10 +1,10 @@
 <md-list>
 	<md-toolbar md-scroll-shrink>
 		<div class="md-toolbar-tools">
-			<h3>tracks</h3>
+			<h3>Queue</h3>
 		</div>
 	</md-toolbar>
-	<md-list-item ng-repeat="track in tracks" ng-click="queue(track)" class="md-2-line">
+	<md-list-item ng-repeat="track in queue" class="md-2-line">
 		<md-icon>music_note</md-icon>
 		<div class="md-list-item-text">
 			<h3>{{track.title}}</h3>
@@ -12,4 +12,3 @@
 		</div>
 	</md-list-item>
 </md-list>
-
